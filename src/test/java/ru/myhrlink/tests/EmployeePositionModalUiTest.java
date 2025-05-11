@@ -41,7 +41,7 @@ public class EmployeePositionModalUiTest extends BaseTest {
     @Story("Employee Position Modal UI Verification")
     @Severity(SeverityLevel.CRITICAL)
     public void verifyEmployeePositionModalUiClerk() {
-        // Arrange
+        // Login
         loginPage.login(config.getDefaultUsername(), config.getDefaultPassword())
                 .closeTelegramInvitationWindow();
 
@@ -50,7 +50,7 @@ public class EmployeePositionModalUiTest extends BaseTest {
         catalogsPage.goToEmployeePositionsCatalog()
                 .openEmployeePositionWindow();
 
-        // Act & Assert
+        // Assert
         assertAll(
                 // Заголовок окна
                 () -> Allure.step("Проверка заголовка окна 'Карточка должности'",

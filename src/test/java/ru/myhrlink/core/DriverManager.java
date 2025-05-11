@@ -21,7 +21,6 @@ public class DriverManager {
     private static void createDriver() {
         WebDriverManager.chromedriver().setup();
         WebDriver webDriver = new ChromeDriver();
-
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(config.getPageLoadTimeout()));
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(config.getImplicitWait()));
