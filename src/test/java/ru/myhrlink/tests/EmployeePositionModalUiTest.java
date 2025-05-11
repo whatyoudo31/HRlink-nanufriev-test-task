@@ -50,7 +50,7 @@ public class EmployeePositionModalUiTest extends BaseTest {
         catalogsPage.goToEmployeePositionsCatalog()
                 .openEmployeePositionWindow();
 
-        // Assert
+        // Asserts
         assertAll(
                 // Заголовок окна
                 () -> Allure.step("Проверка заголовка окна 'Карточка должности'",
